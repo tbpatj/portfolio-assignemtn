@@ -1,0 +1,26 @@
+For our final project for DevMountain, I decided to take on a decently
+ sized project, which was almost a bit of a mistake to say the least, I decided to try and make a
+  social media platform website. It took just about all the tools and tips and tricks that 
+  we learned in our classes for the past 7 weeks. From cyber security, to front-end, backend, databases, the whole shebang, 
+  it was a hefty project, I have learned a lot from building this project even such things like how the 
+  browser can be utilized to store local data, 
+  like session keys or other useful information that you don’t want to have to send between
+  the server and the client constantly, or verify. One problem I encountered was with asynchronous functions,
+   SQL doesn’t like to get along with other await methods 
+  inside of a function, and it wasn’t liking that so I found out if I create asynchronous functions that 
+  return something after a SQL call that has await, it works, took me a little while to figure that out. 
+
+Building my backend assessment
+	for the assessment on our back end/apis. I decided to go out on it. I created a website that pinged a api for dog photos, 
+    also created a simple webapi that encrypts and decrypts any phrase the user puts in. But I was really happy with being able to push the dog images from the api to a sever and storing it temporarily, so the user could go to another site, and view all of these, I really worked hard on the css/js interactivity, adding a lot of animations and transitions. Making it so when you request a dog photo it will slowly crop the image out by sliding.
+	One problem I encountered was making it more efficient, when I realized that the dog photos only loaded 
+    one at a time so there would be a time when the image would disappear then it would wait to fetch a new image 
+    and pull that image, so I decided to make a way using javascript to load one at the beginning of the animation 
+    and store it in a alternate variable, when the transition completed the images would switch, and then it would repeat but with 
+    the alternate image to the original.
+	I learned a lot about js animations learning how the event listeners can really help with css transitions and got to go 
+    really far with that. I chose it because it looks really good, and allows the user to feel the experience.
+	I have used javascript a ton for front end interactivity, starting to learn react, because that’s one more up of that.
+
+		
+

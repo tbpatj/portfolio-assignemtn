@@ -1,0 +1,225 @@
+body, header, head, html, nav{
+    margin:0px;
+    padding:0px;
+}
+body {
+    background: #94e3fe;
+}
+nav {
+    position:sticky;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    position: relative;
+}
+
+#background-img{
+    width: 100vw;
+    height: 800px;
+    position: absolute;
+    z-index: -1;
+}
+#background-cnt{
+    background-image: linear-gradient(180deg, rgb(41, 118, 184), rgb(37, 179, 255));
+    width: 100vw;
+    height: 800px;
+    position: absolute;
+    z-index: -1;
+}
+
+/******************************************************/
+/* ------------ about section ----------- */
+
+#about-container{
+    padding-top: 0px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 800px;
+}
+#about-container-text{
+    width:150px;
+    height:300px;
+}
+#about-text-contain{
+    width: 400px;
+    height:300px;
+    transform: translate(-100px,0px);
+    padding: 30px;
+    overflow-wrap: break-word;
+    border-radius: 50px;
+    background: #94e3fe;
+    box-shadow:  20px 20px 60px #7ec1d8,
+             -20px -20px 60px #aaffff;
+}
+#about-me{
+    text-align: center;
+}
+#profile-circ-contain{
+    position:relative;
+    width: 300px;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile-circ1{
+    border-radius: 300px;
+    width:300px;
+    height:300px;
+    background: linear-gradient(145deg, #9ef3ff, #85cce5);
+    box-shadow:  20px 20px 60px #7ec1d8,
+             -20px -20px 60px #aaffff;
+}
+#profile-circ2{
+    position:absolute;
+    transform: translate(-100px,100px);
+    border-radius: 120px;
+    width:120px;
+    height:120px;
+    background: #94e3fe;
+    /* background: linear-gradient(145deg, #9ef3ff, #85cce5); */
+    box-shadow:  20px 20px 60px #7ec1d8,
+             -20px -20px 60px #aaffff;
+}
+#profile-circ3{
+    position:absolute;
+    transform: translate(100px,120px);
+    border-radius: 120px;
+    width:140px;
+    height:140px;
+    background: #94e3fe;
+    /* background: linear-gradient(145deg, #9ef3ff, #85cce5); */
+    box-shadow:  20px 20px 60px #7ec1d8;
+             /* -20px -20px 60px #aaffff; */
+}
+#profile-circ4{
+    position:absolute;
+    transform: translate(140px,-134px);
+    border-radius: 30px;
+    width:30px;
+    height:30px;
+    background: #94e3fe;
+    box-shadow:  6px 6px 15px #7ec1d8,
+             -6px -6px 15px #aaffff;
+}
+#cover-circ{
+    position:absolute;
+    transform: translate(0,0);
+    border-radius: 300px;
+    width:300px;
+    height:300px;
+    background: #94e3fe;
+    /* background: linear-gradient(145deg, #9ef3ff, #85cce5); */
+   
+}
+#cover-img{
+    position:absolute;
+    width:290px;
+    height:290px;
+    border-radius: 290px;
+    background-color: black;
+}
+
+
+#background-container{
+    position: relative;
+    display: flex;
+}
+#content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 800px;
+}
+#head-container{
+    display:flex;
+    justify-content: center;
+}
+
+/* ------------ Nav bar styling ------------- */
+
+
+/* <div id="nav-bttn">
+            <div id="nav-bar-1"></div>
+            <div id="nav-bar-2"></div>
+            <div id="nav-bar-3"></div>
+        </div> */
+nav{
+    position: relative;
+}
+
+
+#nav-bttn{
+    z-index: 1;
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+#nav-bttn:hover {
+    background-color:azure;
+}
+#nav-bttn:hover *{
+    background-color: black;
+}
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    transform: translate(5px,5px);
+}
+.icon-link{
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+}
+
+#nav-bar-1, #nav-bar-2, .nav-bar-3{
+    position:absolute;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    transition: 0.5s;
+}
+#nav-bar-1{
+    transform: translateY(10px);
+}
+#nav-bar-2{
+}
+
+.nav-bar-3{
+    transform: translateY(-10px);
+}
+.nav-bar-anim{
+    transform: translateX(-25px) rotate(90deg);
+}
+.nav-bar-anim2{
+    height:100px;
+    width:50px;
+    transform: translateX(-25px) rotate(90deg);
+}
+#nav-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    transition: 1s ease-out;
+    overflow: hidden;
+}
+.nav-container{
+    position:absolute;
+    z-index: 2;
+    transform: translateX(50px);
+    background-color: azure;
+    width:0px;
+    height:50px;
+}
+.display-nav{
+    width:100vw;
+   
+}
