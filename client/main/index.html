@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet2" href="sassy.scss">
     <title>GoGoPlace</title>
 </head>
 <body>
     <nav>
         <div id="nav-bttn">
+            <
             <div id="nav-bar-1"></div>
             <div id="nav-bar-2"></div>
             <div id="nav-bar-3" class="nav-bar-3"></div>
@@ -29,18 +31,21 @@
 
         <div id="content-container">
             <div id="head-container">
-                <h1> TJ Luebke </h1>
-                <h2>Developer</h2>
+                <h2 class="name-dev"> TJ Luebke </h2>
+                <h3 class="name-dev">Developer</h3>
                 
             </div>
         </div>
+        <div id="grad-transition"></div>
         <div id="about-container">    
+            
             <div id="about-container-text">
                 <div id='about-text-contain'>
                     <div id="about-me">About Me</div>
                     <p>A little bit about me. <br> I'm TJ I love coding, always have. </p>
                 </div>
             </div>
+            
             <div id="profile-circ-contain">
                 <div id="profile-circ1"></div>
                 <div id="profile-circ2"></div>
@@ -50,8 +55,17 @@
                 <img id="cover-img" src='./resources/TJ.JPG'/>
             </div>
         </div>
+        <h1>Experience</h1>
+        <div id="anim-contain"></div>
+        <div id="project-seperator">
+        <div id="project-container">
+            <canvas id="project-drawer"></canvas>
+        </div>
+        </div>
+        
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="Vector.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

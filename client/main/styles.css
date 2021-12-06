@@ -1,15 +1,27 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap');
+
 body, header, head, html, nav{
     margin:0px;
     padding:0px;
 }
 body {
-    background: #94e3fe;
+    background: rgb(29, 29, 29);
 }
 nav {
     position:sticky;
 }
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
+
+h2{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+}
+h3{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
 }
 #main{
     position: relative;
@@ -22,7 +34,8 @@ h1 {
     z-index: -1;
 }
 #background-cnt{
-    background-image: linear-gradient(180deg, rgb(41, 118, 184), rgb(37, 179, 255));
+    /* background-image: linear-gradient(180deg, rgb(41, 118, 184), rgb(37, 179, 255)); */
+    background: #131313;
     width: 100vw;
     height: 800px;
     position: absolute;
@@ -31,47 +44,77 @@ h1 {
 
 /******************************************************/
 /* ------------ about section ----------- */
-
+#grad-transition{
+    position: absolute;
+    background-image: linear-gradient(to bottom, black, rgb(29,29,29));
+    height:500px;
+    width:100vw;
+}
 #about-container{
-    padding-top: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom:200px;
+    margin-top:200px;
+    border-radius: 10px;
+    background-color:rgb(39,39,39);
+    position: relative;
     display: flex;
-    justify-content:space-around;
-    align-items: center;
-    height: 800px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 #about-container-text{
-    width:150px;
-    height:300px;
+    width:300px;
+    display: flex;
+    justify-content: center;
 }
 #about-text-contain{
-    width: 400px;
-    height:300px;
-    transform: translate(-100px,0px);
+    width: 200px;
+    transform: translate(0,0px);
     padding: 30px;
     overflow-wrap: break-word;
-    border-radius: 50px;
-    background: #94e3fe;
-    box-shadow:  20px 20px 60px #7ec1d8,
-             -20px -20px 60px #aaffff;
+    border-radius: 5px;
+    background-color: rgb(39,39,39);
+    
 }
 #about-me{
     text-align: center;
+    color:white;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
 }
 #profile-circ-contain{
-    position:relative;
-    width: 300px;
-    height:300px;
+    /* top:-100px; */
+    width: 400px;
+    height:400px;
+    transform: translate(0,-20px);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+.name-dev{
+    margin-top:0px;
+    margin-bottom: 0px;
+      
+  
 }
 #profile-circ1{
     border-radius: 300px;
     width:300px;
     height:300px;
-    background: linear-gradient(145deg, #9ef3ff, #85cce5);
-    box-shadow:  20px 20px 60px #7ec1d8,
-             -20px -20px 60px #aaffff;
+    background: linear-gradient(145deg, #848484, #eaeaea);
+    
 }
 #profile-circ2{
     position:absolute;
@@ -79,10 +122,9 @@ h1 {
     border-radius: 120px;
     width:120px;
     height:120px;
-    background: #94e3fe;
+    background: rgb(29, 29, 29);
     /* background: linear-gradient(145deg, #9ef3ff, #85cce5); */
-    box-shadow:  20px 20px 60px #7ec1d8,
-             -20px -20px 60px #aaffff;
+  
 }
 #profile-circ3{
     position:absolute;
@@ -90,10 +132,9 @@ h1 {
     border-radius: 120px;
     width:140px;
     height:140px;
-    background: #94e3fe;
+    background: rgb(29, 29, 29);
     /* background: linear-gradient(145deg, #9ef3ff, #85cce5); */
-    box-shadow:  20px 20px 60px #7ec1d8;
-             /* -20px -20px 60px #aaffff; */
+  
 }
 #profile-circ4{
     position:absolute;
@@ -101,9 +142,7 @@ h1 {
     border-radius: 30px;
     width:30px;
     height:30px;
-    background: #94e3fe;
-    box-shadow:  6px 6px 15px #7ec1d8,
-             -6px -6px 15px #aaffff;
+    background: rgb(29, 29, 29);
 }
 #cover-circ{
     position:absolute;
@@ -111,14 +150,14 @@ h1 {
     border-radius: 300px;
     width:300px;
     height:300px;
-    background: #94e3fe;
+    background: rgb(29, 29, 29);
     /* background: linear-gradient(145deg, #9ef3ff, #85cce5); */
    
 }
 #cover-img{
     position:absolute;
-    width:290px;
-    height:290px;
+    width:300px;
+    height:300px;
     border-radius: 290px;
     background-color: black;
 }
@@ -130,14 +169,22 @@ h1 {
 }
 #content-container{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     width: 100vw;
     height: 800px;
 }
+
 #head-container{
+
     display:flex;
+    position: absolute;
+    left: 100px;
+    top:400px;
+    flex-direction: column;
     justify-content: center;
+    align-items:flex-end;
 }
 
 /* ------------ Nav bar styling ------------- */
@@ -222,4 +269,67 @@ nav{
 .display-nav{
     width:100vw;
    
+}
+
+#anim-contain{
+    position: relative;
+    width:100vw;
+    height:200px;
+    overflow: hidden;
+}
+
+
+.anim-element{
+    position: relative;
+    display: inline-block;
+    width:190px;
+    height:190px;
+    border-radius: 10px;
+    background-color: rgb(39,39,39);
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    z-index: 1;
+    transition: 0.3s;
+
+
+}
+.anim-element:hover{
+    width:210px;
+    height:210px;
+
+    background-color: rgb(42,42,42);
+   
+}
+
+@keyframes example {
+    0%   {right:-2000px;}
+    100% {right:2000px;}
+}
+  
+.element-container{
+    height:200px;
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+.anim-element-container{
+    width:2000px;
+    height:230px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    right:-2000px;    
+
+    animation-name: example, example2;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#project-seperator{
+    margin-top:50px;
+    background-color:rgb(20, 20, 20);
+    height:50px;
 }
